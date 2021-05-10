@@ -1,7 +1,12 @@
-# automation-ML-and-Neural-Interface
+Run the code like this:
 
-smart automation using emotion recognition and brainwave sensing
+*python face_detect.py abba.png*
 
-live face detection and face landmark detection
+If you want to understand how the code works, the details are here:
 
-brain probing with neural interface sensor
+https://realpython.com/blog/python/face-recognition-with-python/
+
+
+Update: Now supports OpenCV3. This change has been made by furetosan ( https://github.com/furetosan) and tested on Linux.
+
+To run the OpenCV3 version, run facedetect_cv3.py.
