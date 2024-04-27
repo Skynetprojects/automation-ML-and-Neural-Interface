@@ -1,5 +1,2 @@
-Run the code like this:
-
-*python face_detect.py abba.png*
-
-To run the OpenCV3 version, run facedetect_cv3.py.
+# Smart-Automation-Using-ML-And-Neural-Interface
+Automation Project Using Machine Learning On Emotions And Brainwave Detection
