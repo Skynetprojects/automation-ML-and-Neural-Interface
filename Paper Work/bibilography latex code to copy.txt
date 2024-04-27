@@ -1,0 +1,23 @@
+
+\thebibliography{reference}
+  
+    \bibitem{ref1} 
+    \textbf{ Smart Home Automation Using Machine Learning Algorithms}\\
+    \textit{John Jaihar;Neehal Lingayat;Patel Sapan Vijaybhai;Gautam Venkatesh;K. P. Upla 2020 International Conference for Emerging Technology (INCET)}
+    \bibitem{ref2} 
+     \textbf{Youtube}\\
+    \textit{https://www.youtube.com/watch?v=DtBu1u5aBsc – Emotion Recognition keras model Training.\\https://www.youtube.com/watch?v=fkgpvkqcoJc\\https://www.youtube.com/watch?v=MrRGVOhARYY\&t}
+    \bibitem{ref3}
+    \textbf{Stack Overflow/python.}\\
+    \textit{https://stackoverflow.com/questions/59596748/warn0-global-sourcereadercbsourcereadercb-terminating-async-callback-wa\\https://stackoverflow.com/questions/34550437/serialexception-could-not-open-port-access-is-denied\\https://stackoverflow.com/questions/46288224/opencv-attributeerror-module-cv2-has-no-attribute-face}
+    \bibitem{ref4}
+    \textbf{Git/dataset}\\
+    \textbf{ “Emotion Recognition using Facial Landmarks,Python, DLib and OpenCV”} \\
+    \textit{https://github.com/vishalsingh020997/Emotion-Recognition-using-Facial-Landmarks0}
+    \bibitem{ref5}
+   \textbf{ Hackster.io.}\\
+   \textit{https://www.hackster.io/Imetomi/use-the-force-or-your-brainwaves-9e839b\\https://www.hackster.io/akshay6766\\https://blynk.hackster.io/ashshaks/control-your-home-appliances-using-your-voice-81d702}
+    \bibitem{ref6}
+   \textbf{Miscellaneous}\\
+   \textit{https://neuralink.com/neuralink\\https://www.analog.com/en/products/ad8232.html\\https://www.tomsonelectronics.com/products/ecg-monitoring-module-arduino\\}
+ 

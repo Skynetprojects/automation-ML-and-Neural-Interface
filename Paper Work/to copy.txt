@@ -1,0 +1,394 @@
+
+Objective
+___________
+
+Our main goal is to bring down manual control to zero and emphasize on strict power control. Also adding circumstance awarness to the system will give us a intelligent control system which saves energy and user comfort.
+
+scope
+
+_______
+
+Scope of the project result is limited due to limitations in available sensor and lack of availablity of desired sensor.  full range of emotion recognition may not be detected,neural interface can only function in a limited fashion
+
+
+Scheme of project
+____________________
+
+Project is divided into 3 stages
+
+Stage 1
+_______
+
+Build Manual Control and Existing System
+Connect ESP8266 to Network Via WIFI Authentication
+Control relay via Blynk App through Blynk App
+Relay Controlls Connected Appliances
+
+
+
+Stage 2
+________
+
+Build Emotion Recognition to the Existing System
+Train Face Data to recognize emotions
+Link Program To ESP8266 & Raspberry Pi 3
+
+ 
+
+Stage 3
+________
+Build Neural Interface and connect to Existing System along Emotion recognition
+Link Neural Interface To ESP8266 & Raspberry Pi 3
+Link Program To ESP8266 & Raspberry Pi 3
+
+
+
+At end of 3rd Stage System Will be complete and performance can be analyzed and can be deployed successfully
+
+ 
+ 
+
+neural interface
+
+______________________
+
+Neural Interface Uses EEG(Electro Encephalograph)sensor to detect beta waves from brain
+These waves are transmitted over Bluetooth or Wi-Fi to Our system for processing
+According to wave pattern respective profiles are switched
+
+Neural Interface Has 2 parts
+
+1 Sensor Electrodes
+2 Amplifier and signal Filtering
+
+Sensor Electrodes
+_____________________
+
+We measure the EEG activity as the difference in voltage between two electrodes. As a general rule, one fixed electrode is chosen as the reference for all the other electrodes. Therefore, an EEG headset contains three types of electrodes: 
+
+Recording electrodes: placed over the specific scalp locations that we want to measure. 
+
+The reference electrode:  one whose signal is subtracted from each of the recording electrodes.
+
+The ground electrode: used to place both the amplifier and the body to the same potential and to reduce common-mode interference.
+
+number of eeg electrodes determines how much and what type of waves to process
+
+Amplifier and Signal Filtering
+_______________________________
+
+The signal From Electrodes are processed in the amplifier and the required waves are filterd out and transmit the wave pattern to the system to process
+
+
+Working
+__________
+System Accquires the wave pattern  and normalize the required value that is set in the system,if the choosen value is reached system chooses corresponding profile and switch relay accordingly
+this is the general Working of Neural Interface.
+
+
+Abberivation
+
+_______________
+
+ML - Machine Learning
+EEG - Electro Encephalograph
+ECG - Electro Cardio Graph
+NI - Neural Interface
+Amp - Amplifier
+Rpi - Raspberry
+Ch - Channel
+R1 - Relay1
+R2 - Relay2
+R3 - Relay3
+R4 - Relay4
+L1 - Light1
+L2 - Light2
+L3 - Light3
+
+
+Future Scope
+--------------------
+Neural Interface
+___________________
+BrainWave Controlled Video Editing Using Macros
+Automation Solution
+BrainWave Computing
+
+Automation using Emotion Recognition
+________________________________________
+Automation solution
+User Health Tracking
+Gesture controlled autmation
+
+
+APPENDIX A
+
+Result Analysis
+_________________
+
+
+Complete Setup
+
+
+Insert Figure :-- Complete Setup figure
+
+Automation Using Emotion Recognition And Neural Interface
+
+
+
+
+
+Module 1 :Emotion Recognition
+
+_________________________________
+
+
+ Model Training
+___________________
+
+
+Insert Figure:---model training
+
+
+model is trained using fer2013.csv dataset and Cuda ToolKit 
+
+
+
+ Face Detection And Emotion Recognition
+______________________________________________
+
+
+
+Insert Figure:---Emotion Profile Switching
+
+Emotion Of user Is Detected and Respective profile is Switched 
+
+Relay Associated To Profile Is Turned On 
+Music Associated To profile is played
+
+
+
+
+Module 2:Neural Interface
+_________________________
+
+Brain Waves is Detected Using EEG Sensor
+
+Insert Figure :- Brain Wave Sensor pic
+
+Attention Level Is Recorded
+
+Insert Figure:--- Brain Attention Level Graph
+
+when certain attention level is peeked connected Relay Is switched On
+
+Insert Figure:-- EEG Light On pic
+
+
+
+APPENDIX B
+
+________________
+
+TOOLS AND SPECIFICATIONS
+__________________________
+
+Here we list out the used Hardware and software tools and its specifications
+used in this project
+
+Hardware Requirements
+	
+	Raspberry Pi 
+	Arduino
+	Node MCU
+	Graphic Card (Nvidia Geforce GTX 1060 6gb VRAM)
+	Relay  5V || 230V 10A x 4
+	WebCam 1080p
+	EEG/ECG Sensor
+  
+Software Requirements
+
+python version 3.9
+
+Python is a popular programming language. It was created by Guido van
+Rossum, and released in 1991. It is used for web development (server-side), software
+development, mathematics, system scripting. Python can be used on a server to create web applications, alongside software to create workflows,to handle big data and
+perform complex mathematics. It can connect to database systems and also read and
+modify files. It is used for rapid prototyping, or for production-ready software development.
+Python works on different platforms (Windows, Mac, Linux, Raspberry Pi,
+etc). It has a simple syntax similar to the English language and the syntax that allows
+developers to write programs with fewer lines than some other programming languages.
+The libraries used in this work are Opencv, Tensorflow, sklearn, Pandas, Numpy, Matplotlib, DlibPython runs on an interpreter system, meaning that code can be executed
+as soon as it is written. This means that prototyping can be very quick. It can be treated
+in a procedural way, an object-orientated way or a functional way. It is possible to
+write Python in an Integrated Development Environment, such as Thonny, Pycharm,
+Netbeans or Eclipse which are particularly useful when managing larger collections of
+Python files. Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. It relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and
+classes. Other programming languages often use curly-brackets for this purpose.
+NLTK is a leading platform for building Python programs to work with
+human language data. It provides easy-to-use interfaces to over 50 corpora and lexical
+resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for
+industrial-strength NLP libraries, and an active discussion forum.
+Natural Language Processing with Python provides a practical introduction
+to programming for language processing. Written by the creators of NLTK, it guides
+the reader through the fundamentals of writing Python programs, working with corpora, categorizing text, analyzing linguistic structure, and more. The online version of
+the book has been been updated for Python 3 and NLTK 3. The libraries used in this
+work are Opencv, Tensorflow, sklearn, Pandas, Numpy, Matplotlib and Dlib. Python is
+a must for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. The advantages of using
+Python are
+• Easy-to-learn :Python has few keywords, simple structure, and a clearly defined
+syntax. This allows the student to pick up the language quickly.
+• Easy-to-read : Python code is more clearly defined and visible to the eyes.
+• Easy-to-maintain : Python’s source code is fairly easy-to-maintain.
+• A broad standard library : Python’s bulk of the library is very portable and crossplatform compatible on UNIX, Windows, and Macintosh.
+• Interactive Mode : Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.
+• Portable : Python can run on a wide variety of hardware platforms and has the
+same interface on all platforms.
+• Extendable : You can add low-level modules to the Python interpreter. These
+modules enable programmers to add to or customize their tools to be more efficient.
+• Databases : Python provides interfaces to all major commercial databases.
+• GUI Programming :Python supports GUI applications that can be created and
+ported to many system calls, libraries and windows systems, such as Windows
+MFC, Macintosh, and the X Window system of Unix.
+• Scalable : Python provides a better structure and support for large programs than
+shell scripting.
+
+AURDUINO IDE
+
+The Arduino Integrated Development Environment (IDE) is a cross-platform application (for Windows, macOS, Linux) that is written in functions from C and C++.
+It is used to write and upload programs to Arduino compatible boards, but also, with the help of third-party cores, other vendor development boards.
+The source code for the IDE is released under the GNU General Public License, version 2.
+The Arduino IDE supports the languages C and C++ using special rules of code structuring.
+The Arduino IDE supplies a software library from the Wiring project, which provides many common input and output procedures.
+User-written code only requires two basic functions, for starting the sketch and the main program loop, that are compiled and linked with a program stub main() into an executable cyclic executive program with the GNU toolchain, also included with the IDE distribution.
+The Arduino IDE employs the program avrdude to convert the executable code into a text file in hexadecimal encoding that is loaded into the Arduino board by a loader program in the board's firmware.
+By default, avrdude is used as the uploading tool to flash the user code onto official Arduino boards.
+
+OpenCV
+
+OpenCV (Open Source Computer Vision Library) is a library of programming functions mainly aimed at real-time computer vision,also machine learning software library. OpenCV was built to provide a common infrastructure for computer vision
+43
+applications and to accelerate the use of machine perception in the commercial products. Being a BSD-licensed product, OpenCV makes it easy for businesses to utilize
+and modify the code. Features of OpenCV Library are
+• Read and write images
+• Capture and save videos
+• Process images (filter, transform)
+• Perform feature detection
+• Detect specific objects such as faces, eyes, cars, in the videos or images.
+• Analyze the video, i.e., estimate the motion in it, subtract the background, and
+track objects in it.
+OpenCV was originally developed in C++. In addition to it, Python and
+Java bindings were provided. OpenCV runs on various Operating Systems such as
+windows, Linux, OSx, FreeBSD, Net BSD, Open BSD, etc
+
+Keras
+
+ Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with a focus on enabling fast experimentation.
+ Being able to go from idea to result as fast as possible is key to doing good research.
+Keras is an open-source software library that provides a Python interface for artificial neural networks. 
+Keras acts as an interface for the TensorFlow library. Up until version 2.3 Keras supported multiple backends, including TensorFlow, Microsoft Cognitive Toolkit, Theano, and PlaidML. As of version 2.4, only TensorFlow is supported.
+
+TensorFlow
+
+TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks. 
+Tensorflow is a symbolic math library based on dataflow and differentiable programming.
+
+
+CUDA Tool Kit
+
+CUDA Toolkit Develop, Optimize and Deploy GPU-Accelerated Apps The NVIDIA® CUDA® Toolkit provides a development environment for creating high performance GPU-accelerated applications. 
+With the CUDA Toolkit, you can develop, optimize, and deploy your applications on GPU-accelerated embedded systems, desktop workstations, enterprise data centers, cloud-based platforms and HPC supercomputers.
+
+
+
+
+
+Result Analysis Neural Interface
+
+________________________
+
+
+
+Electrodes are placed in head such that it can detect electrical impulses from frontal lobe of brain,through the electrodes the detected impulses/waves are transmitted to ECG sensor.
+in EEG Sensor the Detected electrical impulses are measured as attention level and level value is transmitted to aurduino. in aurduino the level value is obtained by reading analog value through analog A0 pin.This value is cross checked against preset value in aurduino if both value equals connected light/relay will turn on else the system will keep reading on new values via analog pin A0
+
+AD8232 EEG Sensor
+
+__________________
+
+The AD8232 is an integrated signal conditioning block for ECG and other biopotential measurement applications. It is designed to extract, amplify, and filter small biopotential signals in the presence of noisy conditions, such as those created by motion or remote electrode placement.
+
+
+In This Project We Used ECG Sensor To Detect Brain Waves.With Few Modification in the electrodes and Program Code we were able to Convert ECG AD8232 Sensor Into EEG Sensor 
+
+
+Experimental Setup
+
+______________________
+
+The Experimental Setup Consist of Aurduino Uno,Ambient Lighting,4CH Relay,AD8232 ECG Sensor,Bluetooth module and Powersupply with Voltage Divider to convert 5v to 3.3 for ECG Sensor And Bluetooth Module
+The Output is can be viewed on Serial Monitor Via Bluetooth or wifi.System Can Be accessed From Anywhere while connecting sysem to internet via a nodemcu module.While running the program we are asked for choosing modes there are 3 modes
+
+1.Manual Mode
+2.Emotion Recognition Mode
+3.Neural Interface Mode
+
+In manual Mode The system Can be overriden To manual Switching App Based or Voice Based Activation Can Be Used
+In Emotion Recognition Mode, Connected WebCam Is Activated To Detect Emotion,when Emotion Detected Is HAppy, HAppy Profile Activated Where Ambient Lighting,Music,Heating or Cooling Apparatus related to profile is turned on
+same goes for all seven emotions.
+In Neural Interface Mode Sensor Value is read using Electrodes When Preset Value Is Reached Respective Profile is Activated
+ 
+every Serial Port Commuincation Is Done Via Bluetooth And System Status,Graph Data and System Errors Are Logged To an class 10 Flash Memory Using Flash Memory Module for Offline Analysis
+
+
+
+Conclusion - Neural Interface
+______________________________
+
+
+From Our Study its understandable that incoperating neural interface to a automation system brings certain comfort to our day to day life.
+it speeds up our activities by directly sensing it from our thoughts and implementing it through our developed system,we dont have to waste any action to do those tasks.
+Due to expanding researches on brainwave controlled automation and emergance of new technologies we could see this system in full action in near future.
+Its Possible to Imagine Every Human Beings will be having a implant in their brains to interface with a computer and search the web in comforts of their own brain in near future.
+  
+
+Conclusion - Emotion Recognition
+_____________________
+
+This Study shows the potential of combining concepts of Machine Learning to any existing automation  system  to  achieve  an  intelligent  control  system.  
+It  benefits  in  strict  powercontrol that helps in achieving energy savings.  It also provide control and reliability. 
+It provides security and comfort at the touch of your fingertips. 
+Moreover, remote monitoringcan  be  setup  easily  and  allows  cost-efficient  and  intelligent  conversion  of  existing  homeautomation  systems  by  incorporating  machine  learning  technology. 
+The  goal  of  HomeAutomation systems powered by Machine Learning is to bring down any manual settingsto zero.  
+Due to the ever expanding applications of Artificial Intelligence, it will not onlychange our workplace but will also change the way we live in our homes
+
+
+Conclusion - All
+______________________
+
+From Our Studies this System shows the potential to achieve  an  intelligent  control  system.
+It  benefits  in  strict  power control that helps in achieving energy savings.It also provide control and reliability. 
+It provides security and comfort at the touch of your fingertips. 
+incoperating neural interface to a automation system brings certain comfort to our day to day life.
+it speeds up our activities by directly sensing it from our thoughts and implementing it through our developed system,we dont have to waste any action to do those tasks.
+Moreover, remote monitoring can  be  setup  easily  and  allows  cost-efficient  and  intelligent  conversion  of  existing  home automation  systems  by  incorporating  advanced  learning  technology. 
+The  goal  of  Home Automation systems powered by This Learning Technology is to bring down any manual settings to zero.
+Due to ever expanding researches on brainwave controlled automation and emergance of new technologies on machine Learning we could see this system in full action in near future.
+Its Possible to Imagine Every Human Beings will be having a implant in their brains to interface with a computer and search the web in comforts of their own brain in near future.
+This System  will not only change our workplace but will also change the way we live in our homes.
+
+
+
+References
+___________
+
+Ref 1:-Smart Home Automation Using Machine Learning Algorithms
+       John Jaihar;Neehal Lingayat;Patel Sapan Vijaybhai;Gautam Venkatesh;K. P. Upla
+       2020 International Conference for Emerging Technology (INCET)
+Ref 2:-https://www.youtube.com/watch?v=DtBu1u5aBsc – Emotion Recognition keras model Training.
+Ref 3:-Stack Overflow/python
+Ref 4:-Hackster.io
+Ref 5:-https://neuralink.com/
+Ref 6:-Minaee S, Abdolrashidi Minaee, Shervin, and Amirali Abdolrashidi. ”Deep-Emotion: Facial Expression Recognition Using Attentional Convolutional Network.” arXiv preprint arXiv:1902.01019 (2019). 
+
